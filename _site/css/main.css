@@ -42,7 +42,18 @@ h4 {
   font-weight: bold;
   text-transform: uppercase;
 }
-
+@media (max-width: 800px) {
+  html {
+    box-shadow: none;
+    padding: 0;
+  }
+/* Kelton Added */
+}
+@media (max-width: 600px){
+  .half-hero {
+    display: none;
+  }
+}
 /* HEADER STYLES */
 .header {
   background-color: #000;
@@ -99,6 +110,9 @@ h4 {
 }
 .header-nav > li:first-child a:hover {
   color: #fff;
+}
+.header-logo {
+  left: 0px;
 }
 
 /* FOOTER STYLES */
@@ -217,6 +231,9 @@ h4 {
 }
 
 /* BLOG STYLES */
+.post-aside {
+  display: none;
+}
 .blog-recent {
   text-align: right;
 }

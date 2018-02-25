@@ -5,6 +5,7 @@ layout: default
 <div class="page blog-index">
   <h1>Bloggie Blog</h1>
   <div class="col-two blog-cols">
+
     <div class="col col-aside blog-recent">
       <h4>Recent Posts</h4>
       <ul class="blog-title-list">
@@ -18,6 +19,7 @@ layout: default
         {% endfor %}
       </ul>
     </div>
+
     <div class="col col-content blog-previews">
       {% for post in site.posts %}
         <div class="blog-posts">
@@ -34,6 +36,7 @@ layout: default
                style="background-image:url({{ post.postHero }})"></div>
           {{ post.excerpt }}
         </div>
+        
       {% endfor %}
     </div>
   </div>

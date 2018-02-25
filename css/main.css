@@ -42,18 +42,7 @@ h4 {
   font-weight: bold;
   text-transform: uppercase;
 }
-@media (max-width: 800px) {
-  html {
-    box-shadow: none;
-    padding: 0;
-  }
-/* Kelton Added */
-}
-@media (max-width: 600px){
-  .half-hero {
-    display: none;
-  }
-}
+
 /* HEADER STYLES */
 .header {
   background-color: #000;
@@ -110,9 +99,6 @@ h4 {
 }
 .header-nav > li:first-child a:hover {
   color: #fff;
-}
-.header-logo {
-  left: 0px;
 }
 
 /* FOOTER STYLES */
@@ -209,9 +195,9 @@ h4 {
 }
 .gallery-thumbs img:hover {
   opacity: 1;
-  /* Kelton Added */
+  /* Kelton Added
   border: .2rem solid rgba(211, 21, 21, .8);
-  width: 50%;
+  width: 50%;*/
 }
 .gallery-thumbs .current img {
   box-shadow: 0 0 0 5px #ed6e2f;
@@ -231,9 +217,6 @@ h4 {
 }
 
 /* BLOG STYLES */
-.post-aside {
-  display: none;
-}
 .blog-recent {
   text-align: right;
 }
@@ -499,4 +482,99 @@ h4 {
 }
 /*.bio-copy a {
   color: green;
+}*/
+
+/* MEDIA STYLES */
+@media (max-width: 800px) {
+  html {
+    box-shadow: none;
+    padding: 0;
+  }
+
+  /* HEADER STYLES */
+  .header-nav {
+    padding: 2vh 1em 0 0;
+  }
+  .header-nav > li {
+    margin-left: 0.25em;
+  }
+  .header-nav > li ~ li {
+    padding-left: 0.25em;
+  }
+  .nav-links a {
+    font-size: 3.25vw;
+  }
+  .header-logo {
+    left: auto;
+  }
+
+  /* HOME STYLES */
+  .home-callout {
+    flex-direction: column;
+  }
+  .callout-copy {
+    flex: 1;
+  }
+  .bio-box {
+    float: none;
+    font-size: 1.3rem;
+    width: auto;
+  }
+
+  /* BLOG STYLES */
+  .post-aside {
+    display: none;
+  }
+    /* Kelton Removed
+  .col-two {
+    flex-direction: column;
+  }
+  .blog-recent {
+    flex: 1;
+  }
+  .blog-recent h4 {
+    text-align: left;
+  }
+  .col-two .col-aside {
+    order: 0;
+  }*/  
+
+  .blog-recent {
+    display: none;
+  }
+  .blog-previews {
+    padding: 0;
+  }
+
+  /* GALLERY STYLES */
+  .gallery {
+    flex-direction: column;
+  }
+  .gallery .col {
+    padding: 1em;
+  }
+  .gallery .gallery-thumbs {
+    flex: 1;
+    height: auto;
+    white-space: nowrap;
+    width: 100vw;
+  }
+  .gallery-thumbs > div {
+    display: inline-block;
+  }
+  .gallery-thumbs img {
+    height: 7vh;
+    margin: 0 10px 0 0;
+    width: auto;
+  }
+  .gallery .gallery-info {
+    flex: 1;
+  }
+
+}
+/*
+@media (max-width: 600px){
+  .half-hero {
+    display: none;
+  }
 }*/

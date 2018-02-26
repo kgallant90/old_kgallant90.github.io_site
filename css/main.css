@@ -44,7 +44,7 @@ h4 {
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Raleway', helvetica, sans;
-  font-weight: 200;
+  font-weight: 400;
 }
 
 /* HEADER STYLES */
@@ -537,11 +537,16 @@ h1, h2, h3, h4, h5, h6 {
   font-size: .9rem;
   color: #e680f2;
 }
+.callout-copy h3 {
+  font-size: 3em;
+  padding-bottom: 0.25em;
+}
 .home-section h2 {
   margin-bottom: 1.5rem;
   text-align: center;
 }
 .home-section h4 {
+  font-size: 3em;
   margin-bottom: 0.5em;
   text-align: center;
 }
